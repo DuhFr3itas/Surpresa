@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Meu Amor</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Player de Música -->
+    <audio id="bg-music">
+        <source id="music-source" src="audio/Easy.mp3" type="audio/mp3">
+        Seu navegador não suporta áudio HTML5.
+    </audio>
+
+    <!-- Botão de Controle da Música -->
+    <div class="position-fixed bottom-0 end-0 p-3">
+        <button id="music-toggle" class="btn btn-primary rounded-circle p-3 shadow">
+            🎵
+        </button>
+    </div>
+
+    <!-- Seção de Boas-vindas -->
+    <header class="hero text-center text-white bg-primary">
+        <div class="container">
+            <h1 class="display-4">Para a mulher mais incrível do mundo</h1>
+            <p class="lead">Este site é um pedacinho do meu amor por você.</p>
+            <button class="btn btn-light btn-lg mt-4 btn-custom" onclick="window.location.href='#historia'">Vamos relembrar um pouco?</button>
+        </div>
+    </header>
+
+    <!-- Contador de Dias Juntos -->
+    <section id="contador" class="text-center p-5 bg-light fade-in">
+        <h2>Estamos juntos há:</h2>
+        <p id="dias-juntos" class="display-4"></p>
+    </section>
+
+    <!-- Carrossel de Imagens -->
+    <section id="carrossel" class="container my-5">
+        <div id="fotoCarrossel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/Carrossel1.jpg" class="d-block w-100" alt="Foto 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Carrossel2.JPG" class="d-block w-100" alt="Foto 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Carrossel3.jpg" class="d-block w-100" alt="Foto 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#fotoCarrossel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#fotoCarrossel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Nossa História -->
+<section id="historia" class="container my-5 fade-in">
+    <h2 class="text-center text-animation">Nossa História</h2>
+    <div class="timeline">
+        <div class="event">
+            <p class="text-animation">Nos conhecemos ainda crianças, numa festa de 15 anos de uma amiga em comum da igreja. A música tocava alto, as luzes coloridas iluminavam o salão, e no meio da multidão, nossos caminhos se cruzaram pela primeira vez. Foi ali que tudo começou, sem que a gente soubesse o quanto aquela noite mudaria nossas vidas.
+            </p>
+            <p class="text-animation">Com o tempo, nos tornamos inseparáveis. Você era minha melhor amiga, minha confidente, aquela com quem eu podia contar para tudo. E, sem perceber, algo dentro de mim começou a mudar. O carinho se transformou em algo mais forte, um sentimento que eu não sabia explicar. O mais curioso? Você sentia o mesmo. Mas nenhum de nós teve coragem de dizer.
+            </p>
+            <p class="text-animation">O medo de estragar nossa amizade foi maior, e esse silêncio nos machucou. Eu tomei um caminho errado e acabei te magoando. Escolhi sua amiga, me afastei de você e, mesmo assim, o amor que sentia nunca se apagou. O tempo passou, mas a culpa e a saudade ficaram. Eu queria voltar, queria consertar tudo, mas não sabia como.
+            </p>
+            <p class="text-animation">Um dia, reuni a coragem que me faltava e decidi me reaproximar. Foi difícil, mas pouco a pouco, reconstruímos nossa amizade. E com isso, o amor voltou a crescer entre nós. Quando finalmente parecíamos estar no caminho certo, você decidiu se afastar. Disse que não queria namorar, que logo iria embora. Foi difícil aceitar, mas respeitei sua decisão.
+            </p>
+            <p class="text-animation">Então, veio a polêmica. As pessoas falavam, os amigos se afastaram, e mais uma vez nos distanciamos. Foram três meses de silêncio, até que, do nada, você me chamou para o seu aniversário. Fiquei surpreso, mas fui. Aquela noite foi diferente. Dormi na sua casa, e quando todos já estavam dormindo, ficamos no sofá, apenas nós dois. O olhar que evitamos por tanto tempo finalmente se encontrou, e naquele momento, sem precisar de palavras, tudo fez sentido. Nos beijamos ali, selando o início do que já deveria ter acontecido há muito tempo.
+            </p>
+            <p class="text-animation">No mês seguinte, em uma viagem com sua família, fiz o que o coração pedia há anos: te pedi em namoro. E no dia 11 de maio de 2024, finalmente começamos nossa história da maneira certa. Desde então, vivemos nosso amor intensamente. Claro, temos brigas e discussões como qualquer casal, mas sempre damos um jeito de superar, porque o amor que temos um pelo outro é maior do que qualquer obstáculo.
+            </p>
+            <p class="text-animation">Olho para trás e vejo quantas voltas demos até chegar aqui. Mas no fim, o destino sempre soube que era você. Sempre foi você.</p>
+
+            <h5 class="text-animation">O Pedido</h5>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="media-container">
+                    <video class="img-fluid rounded media-item" controls>
+                        <source src="Img/Pedido.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeos HTML5.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Motivos pelos quais te amo -->
+    <section id="motivos" class="bg-light p-5 fade-in">
+        <h2 class="text-center">Motivos pelos quais eu te amo</h2>
+        <p id="motivo-texto" class="text-center">Clique no botão para ver um novo motivo!</p>
+        <div class="text-center">
+            <button class="btn btn-danger btn-custom" onclick="novoMotivo()">Mostrar outro motivo</button>
+        </div>
+    </section>
+
+    <!-- Álbum de Fotos -->
+    <section id="album" class="container my-5 fade-in">
+        <h2 class="text-center">Álbum de Fotos</h2>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="media-container">
+                    <img src="img/Alianças.JPG" class="img-fluid rounded media-item" alt="Foto">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="media-container">
+                    <video class="img-fluid rounded media-item" controls>
+                        <source src="Img/Trend.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeos HTML5.
+                    </video>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="media-container">
+                    <img src="img/BarLago.jpg" class="img-fluid rounded media-item" alt="Foto">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="media-container">
+                    <img src="img/Namoro.jpg" class="img-fluid rounded media-item" alt="Foto">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="media-container">
+                    <img src="img/Revelação1.jpg" class="img-fluid rounded media-item" alt="Foto">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="media-container">
+                    <img src="img/Boliche.jpg" class="img-fluid rounded media-item" alt="Foto">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="media-container">
+                    <video class="img-fluid rounded media-item" controls>
+                        <source src="Img/Role.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeos HTML5.
+                    </video>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="media-container">
+                    <img src="img/Lagoinha.jpg" class="img-fluid rounded media-item" alt="Foto">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="media-container">
+                    <img src="img/Piscina.jpg" class="img-fluid rounded media-item" alt="Foto">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="media-container">
+                    <img src="img/Revelação2.jpg" class="img-fluid rounded media-item" alt="Foto">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="media-container">
+                    <video class="img-fluid rounded media-item" controls>
+                        <source src="Img/Dancinha.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeos HTML5.
+                    </video>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="media-container">
+                    <img src="img/VenomGamaro.jpg" class="img-fluid rounded media-item" alt="Foto">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="media-container">
+                    <img src="img/Revelação3.jpg" class="img-fluid rounded media-item" alt="Foto">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="media-container">
+                    <img src="img/Coração.jpg" class="img-fluid rounded media-item" alt="Foto">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="media-container">
+                    <video class="img-fluid rounded media-item" controls>
+                        <source src="Img/Praia.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeos HTML5.
+                    </video>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="media-container">
+                    <img src="img/Combinando.jpg" class="img-fluid rounded media-item" alt="Foto">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="media-container">
+                    <img src="img/Revelação4.jpg" class="img-fluid rounded media-item" alt="Foto">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="media-container">
+                    <img src="img/Dedinho.jpg" class="img-fluid rounded media-item" alt="Foto">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="media-container">
+                    <img src="img/Silhueta.jpg" class="img-fluid rounded media-item" alt="Foto">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="media-container">
+                    <img src="img/Encontro.jpg" class="img-fluid rounded media-item" alt="Foto">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="media-container">
+                    <video class="img-fluid rounded media-item" controls>
+                        <source src="Img/Parque.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeos HTML5.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz do Amor -->
+    <section id="quiz" class="container text-center my-5 fade-in">
+        <h2>Ta afim de uma surpresa?</h2>
+        <p>Responda as perguntas e veja o que te espera!</p>
+        <button class="btn btn-danger btn-custom" onclick="iniciarQuiz()">Iniciar Quiz</button>
+        <div id="quiz-container" class="mt-4"></div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="text-center bg-dark text-white p-3">
+        <p>Feito com amor por Eduardo ❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
